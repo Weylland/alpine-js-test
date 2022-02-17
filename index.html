@@ -35,7 +35,7 @@
 
     <!-- EXEMPLE 4  -->
 
-    <div x-data="{ nombre : 0 }">
+    <!-- <div x-data="{ nombre : 0 }">
 
         <button x-on:click=" nombre++ ">Incrémente de 1</button>
 
@@ -43,7 +43,42 @@
 
         <p x-show=" nombre >= 12 ">Le nombre est supérieur ou égale à 12 !</p>
 
+    </div> -->
+
+    <!-- EXEMPLE 5  -->
+
+    <!-- <div x-data="{ message: '' }">
+        <input type="text" x-model=" message ">
+        <span x-text=" message "></span>
+    </div> -->
+
+    <!-- EXEMPLE 6  -->
+
+    <!-- <form x-data="{ name: '' }" x-on:submit.prevent="console.log(name)">
+        <input type="text" x-model="name">
+        <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- EXEMPLE 6  -->
+
+    <div x-data="{ 
+
+            name: '',
+            
+            majuscule() {
+                this.name = this.name.toUpperCase()
+            }
+            
+        }">
+        <input type="text" x-model="name">
+        <span x-text="name"></span>
+        <button x-on:click="majuscule">Majuscule</button>
     </div>
+
+
+
+
+
 </body>
 
 </html>
