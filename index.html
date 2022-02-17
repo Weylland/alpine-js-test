@@ -20,9 +20,29 @@
 
     <!-- EXEMPLE 2  -->
 
-    <div x-data="{ show : false}">
+    <!-- <div x-data="{ show : false}">
         <button x-on:click="show = !show">Toggle</button>
         <p x-show="show">Texte à afficher !</p>
+    </div> -->
+
+    <!-- EXEMPLE 3  -->
+
+    <!-- <div x-data="{ tableau : [0, 1, 2, 3, 4, 5]}">
+
+        <p x-show=" tableau.length >= 1 ">Texte à afficher !</p>
+
+    </div> -->
+
+    <!-- EXEMPLE 4  -->
+
+    <div x-data="{ nombre : 0 }">
+
+        <button x-on:click=" nombre++ ">Incrémente de 1</button>
+
+        <p x-text=" nombre ">= 1 "></p>
+
+        <p x-show=" nombre >= 12 ">Le nombre est supérieur ou égale à 12 !</p>
+
     </div>
 </body>
 
