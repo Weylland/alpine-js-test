@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js test</title>
+    <script src="./index.js" defer></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+
+<body>
+    <!-- EXEMPLE 1  -->
+
+    <!-- <div x-data="{ show : false}">
+        <button x-on:click="show = true">Afficher</button>
+        <p x-show="show">Texte à afficher !</p>
+    </div> -->
+
+    <!-- EXEMPLE 2  -->
+
+    <div x-data="{ show : false}">
+        <button x-on:click="show = !show">Toggle</button>
+        <p x-show="show">Texte à afficher !</p>
+    </div>
+</body>
+
+</html>
